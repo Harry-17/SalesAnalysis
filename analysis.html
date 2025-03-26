@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Data Analysis</h1>
+    <h2>Dataset Head</h2>
+    {{ head|safe }}
+    <h2>Dataset Description</h2>
+    {{ description|safe }}
+    <h2>Visualizations</h2>
+    <img src="/static/plots/category_sales.png" alt="Category Sales">
+    <img src="/static/plots/sales_distribution.png" alt="Sales Distribution">
+    <img src="/static/plots/region_profit.png" alt="Region Profit">
+    <img src="/static/plots/sales_vs_profit.png" alt="Sales vs Profit">
+    <br>
+    <a href="/download" class="btn">Download Cleaned Dataset</a>
+</body>
+</html>
